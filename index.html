@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>webpack-simple</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="widget1"></div>
+    <div id="widget2"></div>
+    <script src="/dist/manifest.js"></script>
+    <script src="/dist/vendor.js"></script>
+    <script src="/dist/widget1.js"></script>
+    <script src="/dist/widget2.js"></script>
+    <script src="/dist/app.js"></script>
+
+    <script>
+      MyLibrary.widget1.boot(document.getElementById('widget1'));
+      MyLibrary.widget2.boot(document.getElementById('widget2'));
+    </script>
+  </body>
+</html>
